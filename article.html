@@ -22,6 +22,27 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSP4JSZ"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		dataLayer.push({
+			"transactionId": "sk1006",   // внутренний номер заказа (не более 100 символов)
+			"transactionChannel": "adm", // параметр дедупликации (по умолчанию для Admitad)
+			"transactionAction": "1",    // код целевого действия (определяется при интеграции)
+			"transactionProducts": [{
+				"sku": "1354471145550",  // внутренний код продукта (не более 100 символов)
+				"tariff": "2",           // код тарифа (определяется при интеграции)
+				"price": "300.00",       // цена товара
+				"priceCurrency": "RUB",  // код валюты ISO-4217 alfa-3
+				"quantity": "2"          // количество товара
+			}, {
+				"sku": "1354471047246",
+				"tariff": "2",
+				"price": "500.00",
+				"priceCurrency": "RUB",
+				"quantity": "1"
+			}]
+		});
+	 </script>
 <div class="site-wrapper">
 	<nav class="main-nav overlay clearfix">
 	<a class="blog-logo" href="index.html"><img src="assets/img/logo.png" alt="Fashion Critiques"/></a>
